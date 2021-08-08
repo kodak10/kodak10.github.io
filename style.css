@@ -1,0 +1,261 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url('background.jpg');
+  font-family: 'Ubuntu', sans-serif;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px;
+  align-content: center;
+}
+/*colonne de gauche*/
+.left-column {
+  position: relative;
+  align-content: center;
+  background: #003147;
+  padding:40px;
+  flex: 33%;
+  
+}
+.profile{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom:2px solid rgba(255,255,255,0.2);
+
+}
+.left-column .profile .imgbx{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile .imgbx img{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile h2{
+  color:#fff;
+  font: size 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 40px;
+}
+.profile h2 span{
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+.info .title{
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.info ul{
+  position: relative;
+}
+.info ul li{
+  position: relative;
+  list-style: none;
+  margin:10px 0;
+  cursor: pointer;
+}
+.info ul li .icon{
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #fff;
+}
+.info ul li span{
+  color:#fff;
+  font-weight: 300;
+}
+.info.education li{
+    margin-bottom: 15px;
+}
+.info.education h5{
+    color:#03a9f4;
+}
+.info.education h4{
+    color:#fff;
+    font-weight: 500;
+}
+.info.education p{
+  text-transform: uppercase;
+  color:#fff;
+  font-weight: 200;
+}
+.competences, .langue{
+  width: 100%;
+  background-color: #e6e6ff;
+  border-radius: 1em;
+}
+.competences, .langue {
+  font-size: 12px;
+  text-align: center;  
+  color: white;
+}
+.html {width: 80%; background-color: #131379; border-radius: 1em;}
+.xd {width: 70%; background-color: #131379; border-radius: 1em;}
+.crud {width: 60%; background-color: #131379; border-radius: 1em;}
+.ps {width: 50%; background-color: #131379; border-radius: 1em;}
+.wordpress {width: 50%; background-color: #131379; border-radius: 1em;}
+.js {width: 40%; background-color: #131379; border-radius: 1em;}
+.vb {width: 40%; background-color: #131379; border-radius: 1em;}
+.fr {width: 80%; background-color: #131379; border-radius: 1em;}
+.ang {width: 60%; background-color: #131379; border-radius: 1em;}
+.info.education li{
+  margin-bottom: 15px;
+}
+
+.info.langage .title{
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+/*colonne de gauche*/
+.right-column {
+  flex: 66%;
+  background: #cec8c8; 
+  padding: 20px;
+}
+.card {
+    height: 100%;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.1)
+  }
+.right-column .card .info.education h3{
+  padding: 20px;
+  color:#2a7da2;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.right-column .card .info.education h5{
+  color:#0000cc;
+  font-weight: 500;
+}
+
+.about{
+  padding: 20px;
+}
+.about p{
+  color:#000;
+  letter-spacing: 2px;
+}
+p{
+    margin:20px;
+    color:#fff;
+    font-weight: 200;
+}
+.title2{
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.experiences{
+  padding: 20px;
+}
+.experiences .box{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+.experiences .box .annee{
+  min-width: 150px;
+}
+.experiences .box .annee h5{
+ text-transform: uppercase;
+ color:#848c90;
+ font-weight: 600; 
+}
+.experiences .box .annee h4{
+  text-transform: uppercase;
+  color: #2a7da2;
+  font-size: 16px;
+}
+.competences{
+
+  margin-bottom: 50px;
+}
+.competences .box{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center; 
+}
+.competences .box h4{
+  text-transform: uppercase;
+  color: #848c99;
+  font-weight: 500;
+}
+.competences .box .pourcentage{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #f0f0f0;
+  margin-bottom: 5px 0;
+}
+.competences .box .pourcentage div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #03a9f4;
+}
+.interet{
+    padding: 20px;
+    margin: 0;
+}
+.interet h2{
+    color: #003147;
+text-transform: uppercase;
+letter-spacing: 1px;
+}
+.interet ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.interet ul li{
+    list-style: none;
+    color:#333;
+    font-weight: 500;
+    margin:10px 0;
+  }
+.interet ul li .fa{
+  color: #03a9f4;
+  font-size: 20px;
+  width: 20px;
+}
+
+/*responsive*/
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+  .interet ul{
+    grid-template-columns: repeat(1,1fr);
+}
+}
